@@ -5,6 +5,7 @@ export type Transaction = {
   amount: string;
   token: string;
   tokenName: string;
+  deleted: boolean | false;
 };
 
 export type Task = {
@@ -17,4 +18,10 @@ export type State = {
     [key: string]: Transaction;
   };
   tasks: Task[];
+  user: null | string;
 };
+
+export type UserCredential = {
+  email: string;
+  password: string;
+}

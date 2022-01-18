@@ -61,7 +61,8 @@ async function getResult(
         to: getID(),
         amount: `${Math.floor(Math.random() * 9999)}`,
         token: token.id,
-        tokenName: token.name
+        tokenName: token.name,
+        deleted: false
       };
 
       return transactions;
